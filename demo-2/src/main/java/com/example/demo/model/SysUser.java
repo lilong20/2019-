@@ -12,6 +12,7 @@ String userneme;
    String password;
    String name;
    int age;
+   
    String sex;
    String avater;
 public String getUserneme() {
