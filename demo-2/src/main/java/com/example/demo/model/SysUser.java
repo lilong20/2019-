@@ -8,7 +8,7 @@ public class SysUser {
 	public void setUid(int uid) {
 		Uid = uid;
 	}
-String userneme;
+String username;
    String password;
    String name;
    int age;
@@ -16,14 +16,14 @@ String userneme;
    String sex;
    String avater;
 public String getUserneme() {
-	return userneme;
+	return username;
 }
 public void setUserneme(String userneme) {
-	this.userneme = userneme;
+	this.username = userneme;
 }
 @Override
 public String toString() {
-	return "SysUser [Uid=" + Uid + ", userneme=" + userneme + ", password=" + password + ", name=" + name + ", age="
+	return "SysUser [Uid=" + Uid + ", userneme=" + username + ", password=" + password + ", name=" + name + ", age="
 			+ age + ", sex=" + sex + ", avater=" + avater + "]";
 }
 public String getPassword() {
