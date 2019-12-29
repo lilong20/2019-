@@ -7,7 +7,7 @@ int password;
 int age;
 String sex;
 int UID;
-int ll;
+
 public int getAge() {
 	return age;
 }
