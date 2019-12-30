@@ -10,13 +10,13 @@ import edu.swjtuhc.demo.service.Goodservice;
 @Service
 public class goodserviceimpl implements Goodservice {
 	@Autowired
-	goodmapper goodapper;
+	goodmapper goodmapper;
 
 	@Override
 	public int register(Good good) {
 		// TODO Auto-generated method stub
 		
-		Good gd=goodapper.selectGoodBygoodsname(good.getGoodsname());
+		Good gd=goodmapper.selectGoodBygoodsname(good.getGoodsname());
 		int i = 3;
 		if (gd!=null) {
 			i=2;
