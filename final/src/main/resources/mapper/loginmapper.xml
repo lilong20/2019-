@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.swjtuhc.demo.mapper.loginmapper">
+<select id="finduserfromnamepasswrd" resultType= "edu.swjtuhc.demo.model.sysuser">
+select*from sysuser
+where 
+username=#{username} and password=#{password}
+</select>
+</mapper>
