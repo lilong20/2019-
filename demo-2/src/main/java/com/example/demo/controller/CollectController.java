@@ -22,7 +22,7 @@ public class CollectController {
  	 
  	 //调用sevice
         int i =collectService.collectlover(like);
-        result.put("state", i);
+        result.put("state",i);
  	return result;
  	}
 }
