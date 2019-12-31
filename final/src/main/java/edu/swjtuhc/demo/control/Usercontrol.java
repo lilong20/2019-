@@ -21,7 +21,7 @@ public class Usercontrol {
 	public JSONObject register(@RequestBody sysuser user) {
 		JSONObject result =new JSONObject();
 	int i=	userservice.register(user);
-		result.put("state", 1);
+		result.put("state", i);
 		
 		return result;
 	}

@@ -3,18 +3,13 @@
 <mapper  namespace=" edu.swjtuhc.demo.mapper.usermapper">
 <insert id="insteruser" parameterType="edu.swjtuhc.demo.model.sysuser">
 insert into sysuser
-(username,password,sex,name,age)
+(username,password,sex,name,gender)
 values
-(#{username},#{password},#{sex},#{name},#{age})
+(#{username},#{password},#{sex},#{name},#{gender})
 </insert>
 <select  id="selectSysuserbyusername" parameterType="java.lang.String" resultType= "edu.swjtuhc.demo.model.sysuser">
 select*from sysuser
 where
 username=#{username}
-</select>
-<select id="finduserfromnamepasswrd"  parameterType="java.lang.String"  resultType= "edu.swjtuhc.demo.model.sysuser">
-select*from sysuser
-where 
-username=#{username} and password=#{password}
 </select>
 </mapper>

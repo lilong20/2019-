@@ -1,7 +1,5 @@
 package edu.swjtuhc.demo.control;
 
-import java.lang.Thread.State;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,20 +8,17 @@ import org.springframework.web.bind.annotation.RestController;
 import edu.swjtuhc.demo.model.sysuser;
 import edu.swjtuhc.demo.servive.userlogin;
 import net.sf.json.JSONObject;
-
+@RestController
 @RequestMapping("/user")
-public class Userlogin {
+public class logincontrol {
+	
 	@Autowired 
-	userlogin userlogin;
+	userlogin login;
 	@RequestMapping("/login")
-public JSONObject login (@RequestBody sysuser user) {
-
-  JSONObject result	 =new JSONObject();
-  int i=userlogin.login(user);
-  result.put("state", 1);
-  
-  return result;
-  
-}
-
+	public JSONObject login(@RequestBody sysuser user) {
+		JSONObject a=new JSONObject();
+		int i=login.login(user);
+		a.put("sda", i);
+		return a;
+		}
 }

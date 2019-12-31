@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.swjtuhc.demo.mapper.buygoodsmapper" >
+<update id=" buygoods"  parameterType="edu.swjtuhc.demo.model.goods">
+update goods set godsnumber=#{godsnumber-1}
+where
+goodsname=#{goodsname}
+</update>
+
+<select id="selectgoodssnamenumber"     resultType="edu.swjtuhc.demo.model.goods">
+select*from goods
+where
+goodsname=#{goodsname},goodsnumber=#{number}
+</select>
+
+
+</mapper>

@@ -12,5 +12,5 @@ import edu.swjtuhc.demo.model.sysuser;
 public interface usermapper {
 	public sysuser selectSysuserbyusername(String username);
 	public int insertuser(sysuser user);
-	public sysuser finduserfromnamepasswrd(String username,String password);
+	
 }
