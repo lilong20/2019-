@@ -1,10 +1,17 @@
 package com.example.demo.model;
 
 public class SelectSpot {
+	int vid;
 	String city ;  
 	String viewname;
 	String route ;  
 	String  img ;
+	public int getVid() {
+		return vid;
+	}
+	public void setVid(int vid) {
+		this.vid = vid;
+	}
 	public String getCity() {
 		return city;
 	}
@@ -31,6 +38,8 @@ public class SelectSpot {
 	}
 	@Override
 	public String toString() {
-		return "SelectSpot [city=" + city + ", viewname=" + viewname + ", route=" + route + ", img=" + img + "]";
+		return "SelectSpot [vid=" + vid + ", city=" + city + ", viewname=" + viewname + ", route=" + route + ", img="
+				+ img + "]";
 	}
+	
 }

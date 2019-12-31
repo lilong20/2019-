@@ -16,10 +16,10 @@ public class UserServicelmpl implements UserService{
 	@Override
 	public int register(SysUser user) {
 		// TODO Auto-generated method stub
-		SysUser u0 = usermapper.selectUserbyusername(user.getUserneme());
+		SysUser u0 = usermapper.selectUserByUsername(user.getUserneme());
 		int i =-1;
 		if (u0==null) {
-			i = usermapper.inserUser(user);
+			i = usermapper.insertUser(user);
 		}else {
 			i=2;
 		}

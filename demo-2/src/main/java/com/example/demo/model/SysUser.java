@@ -1,30 +1,42 @@
 package com.example.demo.model;
 
 public class SysUser {
-	int Uid;
-   public int getUid() {
-		return Uid;
+	int uid;
+    String username;
+    String password;
+    String name;
+    int age;
+    String sex;
+    String headimg;
+    
+@Override
+	public String toString() {
+		return "SysUser [uid=" + uid + ", username=" + username + ", password=" + password + ", name=" + name + ", age="
+				+ age + ", sex=" + sex + ", avater=" + headimg + "]";
+	}
+public int getUid() {
+		return uid;
 	}
 	public void setUid(int uid) {
-		Uid = uid;
+		this.uid = uid;
 	}
-String username;
-   String password;
-   String name;
-   int age;
-   
-   String sex;
-   String avater;
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getSex() {
+		return sex;
+	}
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
 public String getUserneme() {
 	return username;
 }
 public void setUserneme(String userneme) {
 	this.username = userneme;
-}
-@Override
-public String toString() {
-	return "SysUser [Uid=" + Uid + ", userneme=" + username + ", password=" + password + ", name=" + name + ", age="
-			+ age + ", sex=" + sex + ", avater=" + avater + "]";
 }
 public String getPassword() {
 	return password;
@@ -51,9 +63,9 @@ public void setGender(String gender) {
 	this.sex = gender;
 }
 public String getAvater() {
-	return avater;
+	return  headimg;
 }
 public void setAvater(String avater) {
-	this.avater = avater;
+	this. headimg = headimg;
 }
 }

@@ -6,7 +6,7 @@ import com.example.demo.model.SysUser;
 
 @Mapper
 public interface UserMapper {
-    public SysUser selectUserbyusername(String username);
-    public int inserUser(SysUser user);
+    public SysUser selectUserByUsername(String username);
+    public int insertUser(SysUser user);
     
 }
