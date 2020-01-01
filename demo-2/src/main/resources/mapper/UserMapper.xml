@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.example.demo.mapper.UserMapper">
+ <insert id ="insertUser" parameterType="com.example.demo.model.SysUser">
+     insert into SysUser	 
+     (uid,username,password,name,age,sex)
+     values
+     (#{uid},#{username},#{password},#{name},#{age},#{sex})
+ </insert>
+ <select id="selectUserByUsername" parameterType="java.lang.String" resultType="com.example.demo.model.SysUser">
+        select * from sysuser
+        where
+        username = #{username}
+ </select>
+ </mapper>
