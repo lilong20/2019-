@@ -17,12 +17,10 @@ public class buygoodscontrol {
 	bugoodsservice buy;
 
 @RequestMapping("/buy")
-public JSONObject buygoods(@RequestBody goods goods) {
+public JSONObject buygoods(@RequestBody goods goods, Integer p) {
 	JSONObject a=new JSONObject();
-	int i=buy.buygoods(goods);
+	int i=buy.buygoods(goods,p);
 	a.put("a", i);
 	return a;
 }
-
-
 }
