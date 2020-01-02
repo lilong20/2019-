@@ -5,7 +5,7 @@ String name;
 String username;
 int password;
 int age;
-String sex;
+String gender;
 int UID;
 
 public int getAge() {
@@ -32,11 +32,12 @@ public int getPassword() {
 public void setPassword(int password) {
 	this.password = password;
 }
-public String getSex() {
-	return sex;
+
+public String getGender() {
+	return gender;
 }
-public void setSex(String sex) {
-	this.sex = sex;
+public void setGender(String gender) {
+	this.gender = gender;
 }
 public int getUID() {
 	return UID;
@@ -47,7 +48,7 @@ public void setUID(int uID) {
 @Override
 public String toString() {
 	return "sysuser [name=" + name + ", username=" + username + ", password=" + password + ", age=" + age + ", sex="
-			+ sex + ", UID=" + UID + "]";
+			+ gender + ", UID=" + UID + "]";
 }
 
 

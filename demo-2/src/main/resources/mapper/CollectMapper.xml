@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.CollectMapper">
+ <insert id ="insertlove" parameterType="com.example.demo.model.SysUser">
+       insert into collect 
+        (cid,goodsname,goodsprice)
+          values
+        (#{cid},#{goodsname},#{goodsprice})
+ </insert>
+  <select id="collectBygoodsname" parameterType="java.lang.String" resultType="com.example.demo.model.Goods">
+        select * from collect
+        where
+        goodsname= #{goodsnames}
+ </select>
+ </mapper>
