@@ -12,17 +12,19 @@ public class buygoods implements bugoodsservice{
 	@Autowired 
 	buygoodsmapper buygoods;
 	@Override
-	public int buygoods(goods good) {
+public int buygoods(goods good,Integer p) {
+		
 		// TODO Auto-generated method stub
 		goods a0=buygoods.selectgoodssnamenumber(good.getGoodsname(), good.getGoodsnumber());
+		
 		int i=-1;
 		if(a0!=null) {
-		 i=buygoods.buygoods(good);
-			
+		 i=buygoods.buygoods(good,p);
 		}else {
 			i=2;
 		}
 		return i;
 	
 	}
-}
+
+	}

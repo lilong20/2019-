@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import edu.swjtuhc.demo.mapper.loginmapper;
-import edu.swjtuhc.demo.mapper.usermapper;
+
 import edu.swjtuhc.demo.model.sysuser;
 
 @Service
