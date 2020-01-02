@@ -11,7 +11,7 @@ import com.example.demo.service.SelectSpotService;
 public class SelectSpotServicelmpl implements SelectSpotService {
 @ Autowired
 SelectSpotMapper selectSpotMapper;
-
+ 
 @Override
 public int selectji(SelectSpot spot) {
 	// TODO Auto-generated method stub

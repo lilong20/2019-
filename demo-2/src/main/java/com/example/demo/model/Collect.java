@@ -1,14 +1,13 @@
 package com.example.demo.model;
 
 public class Collect {
-int cid;
+String cid;
 String goodsname;
 String goodsprice;
-
-public int getCid() {
+public String getCid() {
 	return cid;
 }
-public void setCid(int cid) {
+public void setCid(String cid) {
 	this.cid = cid;
 }
 public String getGoodsname() {

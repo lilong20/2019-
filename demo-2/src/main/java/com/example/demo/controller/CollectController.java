@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,13 +17,13 @@ public class CollectController {
 	CollectService collectService;
  @RequestMapping("/love")
  
- public JSONObject collect(Collect like) {
+ public JSONObject collect(@RequestBody Collect like) {
 		
 	  JSONObject result = new JSONObject();
  	 
  	 //调用sevice
-        int i =collectService.collectlover(like);
-        result.put("state",i);
+        int i =collectService.collectliek(like);
+        result.put("text",i);
  	return result;
  	}
 }
