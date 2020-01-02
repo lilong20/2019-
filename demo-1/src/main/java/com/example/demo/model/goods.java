@@ -1,13 +1,8 @@
-package edu.swjtuhc.demo.mode;
+package com.example.demo.model;
 
-public class Good {
+public class goods {
 	String goodsname; 
 	String goodsprice;
-	int gid;
-	@Override
-	public String toString() {
-		return "Good [goodsname=" + goodsname + ", goodsprice=" + goodsprice + ", gid=" + gid + "]";
-	}
 	public String getGoodsname() {
 		return goodsname;
 	}
@@ -20,12 +15,9 @@ public class Good {
 	public void setGoodsprice(String goodsprice) {
 		this.goodsprice = goodsprice;
 	}
-	public int getGid() {
-		return gid;
-	}
-	public void setGid(int gid) {
-		this.gid = gid;
+	@Override
+	public String toString() {
+		return "goods [goodsname=" + goodsname + ", goodsprice=" + goodsprice + "]";
 	}
 	
-
 }
