@@ -8,7 +8,7 @@
      (#{cid},#{goodsname},#{goodsprice})
  </insert>
  <select id="selectgoodsBygoodaname" parameterType="java.lang.String" resultType="com.example.demo.model.Goods">
-        select * from goods
+        select * from  goods
         where
         goodsname = #{goodsname}
  </select>
