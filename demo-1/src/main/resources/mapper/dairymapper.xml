@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC   
+    "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.example.demo.mapper.dairymapper">
+    
+    <resultMap type="com.example.demo.model.dairy" id="dairy_result">
+    	<result column="dairy" property="dairy" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    	<result column="date" property="date" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+    	<result column="photo" property="photo" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    </resultMap>
+    
+    <select id="selectAllDairies" resultMap="dairy_result">
+    	select * from dairy
+    </select>
+    <insert id="insertdairy" parameterType="com.example.demo.model.dairy">
+    insert into dairy
+    (dairy,date,photo)
+    values
+    (#{dairy},#{date},#{photo})
+    </insert>
+    </mapper>
